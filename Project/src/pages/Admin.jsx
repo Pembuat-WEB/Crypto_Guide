@@ -90,7 +90,7 @@ const Admin = () => {
 
               {msg.response ? (
                 <div className="bg-gray-100 p-4 rounded-lg mt-4">
-                  <h3 className="text-md font-semibold text-green-600">Jawaban Admin :</h3>
+                  <h3 className="text-md font-semibold text-green-600">Jawaban Adminaaa :</h3>
                   <p className="text-gray-800 break-words">{msg.response}</p>
                 </div>
               ) : (
