@@ -1,0 +1,278 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-sora: "Sora", sans-serif;
+  --font-code: "Source Code Pro", monospace;
+  --font-grotesk: "Space Grotesk", sans-serif;
+  color-scheme: dark;
+}
+
+* {
+  scroll-behavior: smooth
+}
+
+@layer base {
+  body {
+    @apply font-sans bg-n-8 text-n-1 text-base;
+  }
+}
+
+.rotate-45 {
+  @apply rotate-[45deg]
+}
+
+.rotate-90 {
+  @apply rotate-[90deg]
+}
+
+.rotate-135 {
+  @apply rotate-[135deg]
+}
+
+.rotate-180 {
+  @apply rotate-[180deg]
+}
+
+.rotate-225 {
+  @apply rotate-[225deg]
+}
+
+.rotate-270 {
+  @apply rotate-[270deg]
+}
+
+.rotate-315 {
+  @apply rotate-[315deg]
+}
+
+.rotate-360 {
+  @apply rotate-[360deg]
+}
+
+.-rotate-45 {
+  @apply rotate-[-45deg]
+}
+
+.-rotate-90 {
+  @apply rotate-[-90deg]
+}
+
+.-rotate-135 {
+  @apply rotate-[-135deg]
+}
+
+.-rotate-180 {
+  @apply rotate-[-180deg]
+}
+
+.-rotate-225 {
+  @apply rotate-[-225deg]
+}
+
+.-rotate-270 {
+  @apply rotate-[-270deg]
+}
+
+.-rotate-315 {
+  @apply rotate-[-315deg]
+}
+
+.-rotate-360 {
+  @apply rotate-[-360deg]
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.animate-blink {
+  animation: blink 1s infinite;
+}
+
+.writing-mode-vertical {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+}
+
+
+.gradient-text {
+  background-image: linear-gradient(to right, #a8e063, #ffffff); /* Hijau muda ke putih */
+  -webkit-background-clip: text; /* Menerapkan gradient pada teks */
+  color: transparent; /* Menghapus warna teks default */
+  font-weight: bold; /* Opsional: memberi ketebalan pada teks */
+/* Menghapus warna teks default */
+}
+
+.gradient-text1 {
+  background-image: linear-gradient(to right,  #3498db  , #ffffff); /* Hijau muda ke putih */
+  -webkit-background-clip: text; /* Menerapkan gradient pada teks */
+  color: transparent; /* Menghapus warna teks default */
+  font-weight: bold; /* Opsional: memberi ketebalan pada teks */
+/* Menghapus warna teks default */
+}
+
+.gradient-text2 {
+  background-image: linear-gradient(to right,  #2980b9 , #ffffff); /* Hijau muda ke putih */
+  -webkit-background-clip: text; /* Menerapkan gradient pada teks */
+  color: transparent; /* Menghapus warna teks default */
+  font-weight: bold; /* Opsional: memberi ketebalan pada teks */
+/* Menghapus warna teks default */
+}
+
+.gradient-text3 {
+  background-image: linear-gradient(to right,  #d86ff2 , #ffffff); /* Hijau muda ke putih */
+  -webkit-background-clip: text; /* Menerapkan gradient pada teks */
+  color: transparent; /* Menghapus warna teks default */
+  font-weight: bold; /* Opsional: memberi ketebalan pada teks */
+/* Menghapus warna teks default */
+}
+
+.gradient-text4 {
+  background-image: linear-gradient(to right,#C0C0C0, #FFD700 , #C0C0C0 ); /* Hijau muda ke putih */
+  -webkit-background-clip: text; /* Menerapkan gradient pada teks */
+  color: transparent; /* Menghapus warna teks default */
+  font-weight: bold; /* Opsional: memberi ketebalan pada teks */
+/* Menghapus warna teks default */
+}
+
+.gradient-text5 {
+  background-image: linear-gradient(to right,#B0BEC5,#FF6F00); /* Hijau muda ke putih */
+  -webkit-background-clip: text; /* Menerapkan gradient pada teks */
+  color: transparent; /* Menghapus warna teks default */
+  font-weight: bold; /* Opsional: memberi ketebalan pada teks */
+/* Menghapus warna teks default */
+}
+
+.gradient-text6 {
+  background-image: linear-gradient(to right, #00FF00  ,#C0C0C0, #C0C0C0); /* Hijau muda ke putih */
+  -webkit-background-clip: text; /* Menerapkan gradient pada teks */
+  color: transparent; /* Menghapus warna teks default */
+  font-weight: bold; /* Opsional: memberi ketebalan pada teks */
+/* Menghapus warna teks default */
+}
+
+.gradient-text7 {
+  background-image: linear-gradient(to right, #ffffff,#4b5563,#4b5563); /* Hijau muda ke putih */
+  -webkit-background-clip: text; /* Menerapkan gradient pada teks */
+  color: transparent; /* Menghapus warna teks default */
+  font-weight: bold; /* Opsional: memberi ketebalan pada teks */
+/* Menghapus warna teks default */
+}
+
+.gradient-text8 {
+  background-image: linear-gradient(to right, #A8E6CF,#50C878  ); /* Hijau muda ke putih */
+  -webkit-background-clip: text; /* Menerapkan gradient pada teks */
+  color: transparent; /* Menghapus warna teks default */
+  font-weight: bold; /* Opsional: memberi ketebalan pada teks */
+/* Menghapus warna teks default */
+}
+.gradient-judul {
+  background-image: linear-gradient(to right, #000000,#7b847e  ); /* Hijau muda ke putih */
+  -webkit-background-clip: text; /* Menerapkan gradient pada teks */
+  color: transparent; /* Menghapus warna teks default */
+  font-weight: bold; /* Opsional: memberi ketebalan pada teks */
+/* Menghapus warna teks default */
+}
+
+.black-gradient {
+  background: #000000; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #434343,
+    #000000
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #434343,
+    #000000
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.violet-gradient {
+  background: #804dee;
+  background: linear-gradient(-90deg, #804dee 0%, rgba(60, 51, 80, 0) 100%);
+  background: -webkit-linear-gradient(
+    -90deg,
+    #804dee 0%,
+    rgba(60, 51, 80, 0) 100%
+  );
+}
+
+.green-pink-gradient {
+  background: "#00cea8";
+  background: linear-gradient(90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
+  background: -webkit-linear-gradient(-90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
+}
+
+.orange-text-gradient {
+  background: #f12711; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #f12711,
+    #f5af19
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #f12711,
+    #f5af19
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.green-text-gradient {
+  background: #11998e; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #11998e,
+    #38ef7d
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #11998e,
+    #38ef7d
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.blue-text-gradient {
+  /* background: -webkit-linear-gradient(#eee, #333); */
+  background: #56ccf2; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #2f80ed,
+    #56ccf2
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #2f80ed,
+    #56ccf2
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.pink-text-gradient {
+  background: #ec008c; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #ec008c,
+    #fc6767
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #ec008c,
+    #fc6767
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
