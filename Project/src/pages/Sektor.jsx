@@ -30,7 +30,7 @@ const ProjectCard = ({
             scale: 1,
             speed: 450,
           }}
-          className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full '
+          className='bg-tertiary p-5 rounded-2xl tablet:w-[360px] w-full '
         >
           <div className='relative w-full h-[230px] '>
             <img
@@ -75,28 +75,25 @@ const ProjectCard = ({
 const Sektor = () => {
   return (
     <div className='mt-20 w-full relative bg-Modul-pattern bg-cover bg-no-repeat bg-center'>
-      <div className='flex flex-col items-center lg:flex-row lg:justify-between h-full px-8'>
+      <div className='flex flex-col items-center dekstop:flex-row dekstop:justify-between laptop:flex-row laptop:justify-between  h-full px-8'>
         {/* Left Column */}
-        <div className='flex flex-col items-center lg:items-start'>
-          <h1 className='text-6xl font-bold gradient-text8 italic mt-4 text-center lg:text-left'>
-            Jenis-jenis <br /> <span className='ml-7'>Cryptocurrency</span>
+        <div className='flex-col items-center dekstop:items-start laptop:items-start tablet:items-center tablet:justify-center' >
+          <h1 className='dekstop:text-6xl laptop:text-5xl laptop:-mt-12 tablet:text-5xl text-4xl font-bold gradient-text8 italic mt-4 text-center dekstop:text-left laptop:text-left'>
+            Jenis-jenis <br /> <span className='dekstop:ml-7 laptop:ml-32 '>Cryptocurrency</span>
           </h1>
-          <div className='h-[290px] w-[500px] mt-4 -ml-4 items-center justify-center'>
+          <div className='dekstop:h-[290px] dekstop:w-[500px] laptop:h-[200px] laptop:w-[400px] tablet:h-[200px] tablet:w-[410px]  mt-4 -ml-4 items-center justify-center'>
             <ViewBook />
           </div>
-          <p className='text-2xl mt-4 font-semibold w-full lg:w-[550px] text-center lg:text-left'>
-         
-          </p>
         </div>
 
         {/* Right Column */}
-        <div className='flex flex-row mt-10 lg:mt-0'>
-          <div className='text-center text-6xl text-white opacity-10 blur-sm animate-blink mt-4 -ml-80'>
+        <div className='flex flex-row mt-10 dekstop:mt-0'>
+          <div className='hidden laptop:block text-center text-6xl text-white opacity-10 blur-sm animate-blink mt-4 -ml-80'>
             {['B', 'E', 'L', 'A', 'J', 'A', 'R'].map((letter, index) => (
               <div key={index}>{letter}</div>
             ))}
           </div>
-          <div className='text-center text-6xl text-white opacity-10 blur-sm animate-blink mt-32 ml-6'>
+          <div className='hidden laptop:block text-center text-6xl text-white opacity-10 blur-sm animate-blink mt-32 ml-6'>
             {['C', 'R', 'Y', 'P', 'T', 'O'].map((letter, index) => (
               <div key={index}>{letter}</div>
             ))}
@@ -105,9 +102,9 @@ const Sektor = () => {
       </div>
 
       {/* Project Section */}
-      <div className='mt-20 px-8'>
+      <div className='dekstop:mt-20 laptop:mt-40 px-8'>
         <motion.div variants={textVariant()} className='text-center'>
-          <p className={`${styles.sectionSubText}`}>Materi</p>
+          <p className={`${styles.sectionSubText} `}>Materi</p>
           <h2 className={`${styles.sectionHeadText} mt-4`}>Jenis-jenis Crypto</h2>
         </motion.div>
 

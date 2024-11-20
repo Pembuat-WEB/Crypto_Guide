@@ -23,15 +23,15 @@ const Navbar = () => {
   };
 
   return (
-    <div className="fixed top-0 left-0 w-full z-50 border-b border-n-6 lg:bg-n-8/90 lg:backdrop-blur-sm bg-n-8">
-      <div className="flex items-center justify-between px-5 lg:px-7.5 xl:px-10 py-1">
-        <a className="block w-[12rem] xl:mr-8" href="#hero">
+    <div className="fixed top-0 left-0 w-full z-50 border-b border-n-6 laptop:bg-n-8/90 laptop:backdrop-blur-sm bg-n-8">
+      <div className="flex items-center justify-between px-5 laptop:px-7.5 dekstop:px-10 py-1">
+        <a className="block w-[12rem] dekstop:mr-8" href="#hero">
           <img src={profil} width={190} height={40} alt="Logo" />
         </a>
 
         {/* Hamburger Menu Button */}
         <button
-          className="lg:hidden text-white text-2xl"
+          className="laptop:hidden text-white text-2xl"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
           {isMenuOpen ? <FiX /> : <FiMenu />}
@@ -41,11 +41,11 @@ const Navbar = () => {
         <nav
           className={`${
             isMenuOpen ? "flex" : "hidden"
-          } flex-col items-center fixed top-0 left-0 right-0 bottom-0 bg-n-8 z-50 lg:z-auto lg:static lg:flex lg:flex-row lg:bg-transparent transition-transform duration-300 ease-in-out ${
-            isMenuOpen ? "translate-y-0" : "-translate-y-full lg:translate-y-0"
+          } flex-col items-center fixed top-0 left-0 right-0 bottom-0 bg-n-8 z-40 laptop:z-auto laptop:static laptop:flex laptop:flex-row laptop:bg-transparent laptop:mr-16 transition-transform duration-300 ease-in-out ${
+            isMenuOpen ? "translate-y-0" : "-translate-y-full laptop:translate-y-0"
           }`}
         >
-          <div className="flex flex-col items-center mt-10 lg:mt-0 lg:flex-row space-y-4 lg:space-y-0 lg:space-x-6">
+          <div className="flex flex-col items-center mt-10 laptop:mt-0 laptop:flex-row space-y-4 laptop:space-y-0 laptop:space-x-6">
             {[{ path: "/", label: "Beranda", key: "beranda" },
               { path: "/Crypto", label: "Apa itu Cryptocurrency", key: "crypto" },
               { path: "/CaraKerja", label: "Cara Kerja", key: "cara-kerja" },
@@ -65,7 +65,7 @@ const Navbar = () => {
           </div>
 
           {/* Auth Button for Mobile */}
-          <div className="lg:hidden mt-5">
+          <div className="laptop:hidden mt-5">
             {user == null ? (
               <Link
                 to="/Login"
@@ -85,10 +85,16 @@ const Navbar = () => {
               </button>
             )}
           </div>
+          <button
+          className="laptop:hidden text-white text-4xl mt-12"
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+        >
+           <FiX />
+        </button>
         </nav>
 
         {/* Auth Button for Desktop */}
-        <div className="hidden lg:block">
+        <div className="hidden laptop:block">
           {user == null ? (
             <Button>
               <Link

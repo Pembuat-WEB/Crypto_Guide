@@ -3,44 +3,47 @@ import React from 'react'
 const Keamanan = () => {
   return (
     <div className='mt-24 relatife h-full w-full '>
-      <div className='relative h-[500px] w-full bg-CaraKerja2-pattern bg-cover bg-no-repeat  bg-center flex  '>
-     
+      <div className="relative h-[500px] w-full bg-CaraKerja2-pattern bg-cover bg-no-repeat bg-center flex flex-col dekstop:flex-row laptop:flex-row tablet:flex-row">
+  <div className="relative h-[100px] w-full dekstop:w-[650px] laptop:w-[600px] tablet:w-[500px] ml-4 dekstop:ml-8 mt-4 dekstop:mt-8">
+    <h1 className="font-bold text-4xl dekstop:text-7xl laptop:text-6xl tablet:text-5xl tablet:mt-4 tablet:ml-20 gradient-text7">Keamanan</h1>
+    <h1 className="font-bold mt-2 ml-32 dekstop:mt-4 text-3xl dekstop:text-6xl laptop:text-5xl tablet:text-4xl gradient-text7 dekstop:ml-40 laptop:ml-40 tablet:ml-52 ">
+      Cryptocurrency
+    </h1>
+    <p className=" text-sm tablet:text-[15px] laptop:text-[17px] mt-52 dekstop:mt-48 laptop:mt-48 text-center w-full dekstop:w-[850px] laptop:w-[700px] tablet:w-[600px] tablet:mt-52  ">
+      Keamanan cryptocurrency adalah aspek yang sangat penting karena aset digital ini beroperasi di
+      lingkungan yang terdesentralisasi dan tanpa perantara seperti bank atau institusi finansial.
+      Beberapa elemen utama keamanan dalam cryptocurrency meliputi kriptografi, mekanisme konsensus,
+      dan teknologi blockchain. Berikut adalah beberapa informasi kunci tentang keamanan cryptocurrency:
+    </p>
+  </div>
 
-        <div className='relative h-[100px] w-[700px] ml-8 mt-8'>
-          <h1 className='font-bold text-7xl gradient-text7 '>Keamanan</h1>
-          <h1 className='font-bold  mt-4 text-6xl gradient-text7 ml-52'>Cryptocurrency</h1>
-          <p className='text-[#dfd9ff] sm: text-[17px] mt-48 text-center w-[850px]'> 
-          Keamanan cryptocurrency adalah aspek yang sangat penting karena aset digital ini beroperasi di lingkungan yang terdesentralisasi dan tanpa perantara seperti bank atau institusi finansial. Beberapa elemen utama keamanan dalam cryptocurrency meliputi kriptografi, mekanisme konsensus, dan teknologi blockchain. Berikut adalah beberapa informasi kunci tentang keamanan cryptocurrency:
-          </p>
-        </div>
+  <div className="text-center text-white mt-4 dekstop:mt-0 dekstop:ml-72 opacity-10 filter blur-sm animate-blink w-full dekstop:w-auto flex justify-center dekstop:block laptop:ml-32 laptop:-mt-2  ">
+    <div className="hidden laptop:block h-[200px] w-[50px] dekstop:w-[140px] laptop:w-[100px] tablet:w-[80px] mt-2 ">
+      <p className=" font-bold text-3xl tablet:text-3xl laptop:text-4xl dekstop:text-5xl">
+        K <br />
+        E <br />
+        A <br />
+        M <br />
+        A <br />
+        N <br />
+        A <br />
+        N
+      </p>
+    </div>
 
-        <div className='text-center text-white mt-4 ml-72 opacity-10filter blur-sm animate-blink w-full'>
-          <div className='h-[200px] w-[100px] mt-2'>
-            <p className='font-bold text-5xl  '>
-              K <br />
-              E <br />
-              A <br />
-              M <br />
-              A <br />
-              N <br />
-              A <br />
-              N 
-            </p>
-          </div>
+    <div className="hidden laptop:block h-[200px] w-[50px] tablet:w-[80px] laptop:w-[100px] dekstop:w-[140px] ml-4 tablet:ml-8 laptop:-ml-8 dekstop:ml-24 dekstop:mt-1 -mt-4 tablet:-mt-6 laptop:mt-48">
+      <p className="font-bold text-3xl tablet:text-3xl laptop:text-4xl dekstop:text-5xl ">
+        C <br />
+        R <br />
+        Y <br />
+        P <br />
+        T <br />
+        O <br />
+      </p>
+    </div>
+  </div>
+</div>
 
-          <div className='h-[200px] w-[100px] ml-16 -mt-6'>
-            <p className='font-bold text-5xl'>
-              C <br />
-              R <br />
-              Y <br />
-              P <br />
-              T <br />
-              0 <br />
-            </p>
-          </div>
-        </div>
-
-      </div>
 
       <div className='relative h-[500px] w-auto bg-Keamanan-pattern bg-cover bg-no-repeat  bg-center '>
         < div className='h-[500px] w-auto p-14'>
